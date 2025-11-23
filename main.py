@@ -19,3 +19,4 @@ print("tomonlari 125 ga teng kvadratning yuzi", 125*125, "perimetri", 125*4)
 print('diametri 12 teng bolgan doiraning yuzi', 3.14*(12/2)**2)
 # Katetlari 6 va 7 bo'lgan to'g'ri burchakli uchburchakning gipotenuzasini toping
 print("Katetlari 6 va 7 bo'lgan to'g'ri burchakli uchburchakning gipotenuzasi", math.sqrt((6*6) + (7*7)))
+print("hello Ayubxon")
