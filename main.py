@@ -113,34 +113,83 @@ import math
 # ism = input("ismingizni kiriting ")
 # print("Assalomu aleykum " + ism.title())
 
-kocha = input("qaysi ko'chada turasiz ")
-mahalla = input('qaysi mahallada turasiz ')
-tuman = input("qaysi tumanda turasiz ")
-viloyat = input("qaysi viloyatdansiz ")
-manzil = (f"{kocha} ko'chasi, \n{mahalla} mahallasi, \n{tuman} tumani, \n{viloyat} viloyati")
-print(manzil.upper())
-print(manzil.lower())
-print(manzil.title())
-print(manzil.capitalize())
+# kocha = input("qaysi ko'chada turasiz ")
+# mahalla = input('qaysi mahallada turasiz ')
+# tuman = input("qaysi tumanda turasiz ")
+# viloyat = input("qaysi viloyatdansiz ")
+# manzil = (f"{kocha} ko'chasi, \n{mahalla} mahallasi, \n{tuman} tumani, \n{viloyat} viloyati")
+# print(manzil.upper())
+# print(manzil.lower())
+# print(manzil.title())
+# print(manzil.capitalize())
+
+
+#/////////////
+
+#sonlar
+
+ 
+# a = 20
+# b = 2.2
+# temp = 36.6
+# print(type(a))
+# aholi_soni = 7_594_376_567
+# print("aholi soni", aholi_soni)
+
+# x, y, z = 10, 5.5, -56
+
+# c = a*b
+
+# d = 100//2
+
+# radius = 20
+# PI = 3.14159
+# diametr = 2*radius
+# print("aylana uzunligi", PI*diametr)
+
+# ism = "Jobir"
+# yosh = 36
+# xabar = ism + " " + str(yosh) + " yoshda"
+# print(xabar)
+
+# t_yil = int(input("Tugilgan yilingizni kiriting "))
+# yosh = 2025 - t_yil
+# print("siz", yosh, "yoshda ekansiz")
+
+
+# a = int("10")
+# b = float("10")
+# temp = str(36.6)
+
+# son = int(input("istalgan sonni kiriting "))
+
+# Foydalanuvchi kiritgan sonning kvadrati va kubini konsolga chiqaruvchi dastur
+
+# kvadrat = son**2
+# kub = son**3
+# print(f'{son} ning kvadrati {kvadrat} ga teng')
+# print(f'{son} ning kubi {kub} ga teng')
+
+
+# Foydalanuvchining yoshini so'rab, uning tug'ilgan yilini hisoblab, konsolga chiqaruvchi dastur
+
+# age = int(input("yoshingiz nechchida "))
+
+# t_yil = 2025 - age
+
+# print(f"Siz {t_yil} da tug'ilgansiz")
+
+# Foydalanuvchidan ikki son kiritshni so'rab, kiritilgan sonlarning yig'indisi, ayirmasi, ko'paytmasi va bo'linmasini chiqaruvchi dastur
+
+a = int(input("birinchi sonni kiriting \n>>> "))
+b = int(input("ikkinchi sonni kiriting \n>>> "))
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(f'{a} + {b} = {a+b}')
+print(f'{a} - {b} = {a-b}')
+print(f'{a} * {b} = {a*b}')
+print(f'{a} / {b} = {a/b}')
 
 
 
