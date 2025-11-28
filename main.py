@@ -181,15 +181,71 @@ import math
 
 # Foydalanuvchidan ikki son kiritshni so'rab, kiritilgan sonlarning yig'indisi, ayirmasi, ko'paytmasi va bo'linmasini chiqaruvchi dastur
 
-a = int(input("birinchi sonni kiriting \n>>> "))
-b = int(input("ikkinchi sonni kiriting \n>>> "))
+# a = int(input("birinchi sonni kiriting \n>>> "))
+# b = int(input("ikkinchi sonni kiriting \n>>> "))
+
+# print(f'{a} + {b} = {a+b}')
+# print(f'{a} - {b} = {a-b}')
+# print(f'{a} * {b} = {a*b}')
+# print(f'{a} / {b} = {a/b}')
+
+#  lists (Royhatlar)
+
+# mevalar = ['olma', 'anjir', 'shaftoli', 'orik']
+# narhlar = [12000, 18000, 10900, 22000]
+# sonlar = ['bir', 'ikki', 3, 4, 5]
+# ismlar = []
+
+# print('birinchi meva', mevalar[0])
+# hayvonlar = ["it", "mushuk", 'sigir', "qoy", "quyon", "mushuk"]
+
+# bozorlik = ["yog", "un", "piyoz", "banan", "gosht"]
+
+# mahsulot = bozorlik.pop(3)
+
+# print(f"men {mahsulot} sotib oldim")
+# print(f"sotib olinmagan mahsulot: {bozorlik}")
+
+# ismlar = ["Abdulbosit", "Akramjon", "Abdushohid"]
+
+# print(f'Salom {ismlar[0]} dostim boringa shukur')
+# print(f'Salom {ismlar[1]} dostim bugun korishaylik')
+# print(f"Salom {ismlar[2]} men pythonni o'rganyapman. Agar sen bu habarni o'qigan bo'lsang demak sen hali ham IT sohasidasan.")
+
+# sonlar = [12, 35, 5.5, -15, -15.5]
+# print(sonlar[0] + 15)
+# print(sonlar[1] - 35)
+# print(sonlar[2] + 15)
+# print(sonlar[3] + 15)
+# print(sonlar[4] + 15)
+
+# t_shaxslar = ["Muhammad SAV", "Abubakr Siddiq", "Abdulhamid" ]
+# z_shaxslar = ["Muhammad Avvoma", "Arshad Madaniy", "Taqiy Usmoniy"]
+
+# print(f"Men tarixiy insonlardan {t_shaxslar.pop(0)} bilan Zamonaviy shaxslardan esa {z_shaxslar.pop(2)} bilan suhbat qilishni istar edim")
+
+friends = []
+
+friends.append("Abdulbosit")
+friends.append("Akramjon")
+friends.append("Abdurrohman")
+friends.append("Abdushohid")
+friends.append("Abdulloh")
+
+friends.remove("Abdurrohman")
+friends.insert(0, "Musoxon")
+friends.insert(2, "Mutalli")
+friends.insert(-1, "shoh")
+
+print(friends)
+
+mehmonlar = []
+mehmonlar.append(friends.pop(3))
+mehmonlar.append(friends.pop(2))
+mehmonlar.append(friends.pop(1))
+print(f"kelgan mehmonlar {mehmonlar}")
 
 
-
-print(f'{a} + {b} = {a+b}')
-print(f'{a} - {b} = {a-b}')
-print(f'{a} * {b} = {a*b}')
-print(f'{a} / {b} = {a/b}')
 
 
 
