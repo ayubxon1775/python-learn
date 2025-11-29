@@ -224,28 +224,72 @@ import math
 
 # print(f"Men tarixiy insonlardan {t_shaxslar.pop(0)} bilan Zamonaviy shaxslardan esa {z_shaxslar.pop(2)} bilan suhbat qilishni istar edim")
 
-friends = []
+# friends = []
 
-friends.append("Abdulbosit")
-friends.append("Akramjon")
-friends.append("Abdurrohman")
-friends.append("Abdushohid")
-friends.append("Abdulloh")
+# friends.append("Abdulbosit")
+# friends.append("Akramjon")
+# friends.append("Abdurrohman")
+# friends.append("Abdushohid")
+# friends.append("Abdulloh")
 
-friends.remove("Abdurrohman")
-friends.insert(0, "Musoxon")
-friends.insert(2, "Mutalli")
-friends.insert(-1, "shoh")
+# friends.remove("Abdurrohman")
+# friends.insert(0, "Musoxon")
+# friends.insert(2, "Mutalli")
+# friends.insert(-1, "shoh")
 
-print(friends)
+# print(friends)
 
-mehmonlar = []
-mehmonlar.append(friends.pop(3))
-mehmonlar.append(friends.pop(2))
-mehmonlar.append(friends.pop(1))
-print(f"kelgan mehmonlar {mehmonlar}")
+# mehmonlar = []
+# mehmonlar.append(friends.pop(3))
+# mehmonlar.append(friends.pop(2))
+# mehmonlar.append(friends.pop(1))
+# print(f"kelgan mehmonlar {mehmonlar}")
 
+# ////////////////////
 
+# listlar bilan ishlash
+
+# cars = ["Audi", "Bmw", "mercedes benz", "volvo", "general motors", "tayoto"]
+
+# narhlar = [12000, 22500, 23456, 9800, 5600, 9934, 32874]
+# arzon = min(narhlar)
+# qimmat = max(narhlar)
+# jami = sum(narhlar)
+# print(f"eng arzon narh {arzon}. eng qimmat narh {qimmat}. jami summa {jami}")
+
+# toys = ("bus", "car", "bear", "dino", "snake", "lizard")
+
+# davlatlar = ["O'zbekiston", "Rossiya", "AQSh", "Saudia Arabia"]
+# print(davlatlar)
+# print(len(davlatlar))
+# print(sorted(davlatlar))
+# print(sorted(davlatlar, reverse=True))
+# print(davlatlar)
+# davlatlar.reverse()
+# print(davlatlar)
+# davlatlar.sort(reverse=True)
+# print(davlatlar)
+# sonlar=list(range(120, 1200, 2))
+# print(sonlar)
+# yigindi = sum(sonlar)
+# print(f'sonlarning yigindisi {yigindi} boladi')
+# eng_kichik = min(sonlar)
+# eng_katta = max(sonlar)
+# print(f'sonlardagi eng katta son va eng kichik sonni ayirmasi {eng_katta-eng_kichik} boladi')
+# print(len(sonlar))
+# print(sonlar[:20])
+# print(sonlar[-20:])
+# print(sonlar[530:550])
+
+# taomlar=["osh", 'shashlik', 'shorva', 'manti', 'somsa']
+# nonushta = taomlar[:]
+# del(nonushta[1:5])
+# nonushta.append('mastava')
+# nonushta.append('bilinchi')
+# print(taomlar)
+# print(nonushta)
+# nonushta = tuple(nonushta)
+# nonushta[0] = "qaymoq va non"
 
 
 
