@@ -291,7 +291,57 @@ import math
 # nonushta = tuple(nonushta)
 # nonushta[0] = "qaymoq va non"
 
+# //////////////
 
+# for
+
+# mehmonlar = ['ali', 'vali', 'hasan', 'husan', 'olim']
+
+# for mehmon in mehmonlar:
+#     print(f'Hurmatli {mehmon} sizni 20-dekabr kuni nahorgi oshga taklif qilamiz')
+#     print(f'hurmat bilan palonchiyevlar oilasi')
+
+# sonlar = list(range(1,11))
+# for son in sonlar:
+#     print(f'{son} ning kvadrati {son**2} ga teng')
+    
+# sonlar = list(range(11))
+# sonlar_kvadrati = []
+# for son in sonlar:
+#     sonlar_kvadrati.append(son**2)
+    
+# print(sonlar)
+# print(sonlar_kvadrati)
+
+# dostlar = []
+# print("dostingizni ismini kiriting")
+
+# for n in range(5):
+#     dostlar.append(input(f'{n+1}-dostingizni ismini kiriting \n >>>> '))
+# print(dostlar)
+
+# ismlar = ["abdulbosit", "akram", 'abdurrohman', 'akramjon', 'abdushohid', 'ayubxon']
+
+# for ism in ismlar:
+#     print(f'{ism} dostim boringa shukr')
+# print(f'kod {len(ismlar)} marta takrorlandi')
+
+# for n in range(11, 100, 2):
+#     print(n)
+#     print(n**3)
+
+# kinolar = []
+# print("5 ta eng sevimli kinoni kiting")
+# for kino in range(5):
+#     kinolar.append(input(f'{kino+1}-kino nomi \n >>> '))
+# print(kinolar)
+
+people = int(input("bugun nechta odam bilan suhbatlashdingiz "))
+ismlar =[]
+
+for n in range(people):
+    ismlar.append(input(f'{n+1}-suhbat qilgan odamingiz kim '))
+print(ismlar)
 
 
 
