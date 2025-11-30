@@ -320,11 +320,14 @@ import math
 #     dostlar.append(input(f'{n+1}-dostingizni ismini kiriting \n >>>> '))
 # print(dostlar)
 
+# vazifa
+
 # ismlar = ["abdulbosit", "akram", 'abdurrohman', 'akramjon', 'abdushohid', 'ayubxon']
 
 # for ism in ismlar:
 #     print(f'{ism} dostim boringa shukr')
 # print(f'kod {len(ismlar)} marta takrorlandi')
+
 
 # for n in range(11, 100, 2):
 #     print(n)
@@ -336,14 +339,96 @@ import math
 #     kinolar.append(input(f'{kino+1}-kino nomi \n >>> '))
 # print(kinolar)
 
-people = int(input("bugun nechta odam bilan suhbatlashdingiz "))
-ismlar =[]
+# people = int(input("bugun nechta odam bilan suhbatlashdingiz "))
+# ismlar =[]
 
-for n in range(people):
-    ismlar.append(input(f'{n+1}-suhbat qilgan odamingiz kim '))
-print(ismlar)
+# for n in range(people):
+#     ismlar.append(input(f'{n+1}-suhbat qilgan odamingiz kim '))
+# print(ismlar)
+
+# /////////////
+
+# if else
+
+# avtolar = ["audi", 'bmw', 'volvo', 'hyundai']
+
+# for avto in avtolar:
+#     if avto == "bmw":
+#         print(avto.upper())
+#     else:
+#         print(avto.title())
+        
+
+# ism = "Ali"
+
+# ism.lower() == "ali"
 
 
+# ism = input("Ismingiz nima \n >>> ")
+# if ism.lower() != 'ali':
+#     print(f'uzr, {ism.title()} biz Alini kutyapmiz')
+# else:
+#     print('Salom, Ali')
+
+# javob = float(input('12*6 nechchiga teng \n >>> '))
+# if javob != 72:
+#     print("javob hato")
 
 
+# yosh = int(input("Yoshingizni kiriting \n >>> "))
+# if yosh >= 18:
+#     print("Hush kelibsiz")
+# else:
+#     print("mumkin emas")
+    
+# login = input("Yangi login tanlang:")
+# if len(login) <= 5:
+#     print("login 5 ta harfdan koproq bolishi shart")
 
+
+# yil = int(input('tugilgan yilingizni kiriting: \n >>> '))
+# if 2025-yil<18:
+#     print(f'yoshingiz {2025-yil} da ekan')
+#     print('kirish mumkin emas')
+# else:
+#     print("hush kelibsiz")
+
+# yosh = int(input('yoshingiz nechchida >>>'))
+# if yosh>65: print("siz covid 19 risk guruhida ekansiz")
+
+# x, y = 25, 50
+# print("x > y") if x>y else print('x<y')
+
+# cars = ['toyoto', 'mazda', 'hyundai', 'gm', 'kia']
+
+# for car in cars:
+#     if car == "gm":
+#         print(car.upper())
+#     else:
+#         print(car.title())
+        
+
+# for car in cars:
+#     if car != "gm":
+#         print(car.title())
+#     else:
+#         print(car.upper())
+
+# login = input("loginni kiriting \n >>>")
+# if login.lower() == "admin":
+#     print("foydalanuvchilar ro'yxatini ko'rasizmi")
+# else:
+#     print(f"hush kelibsiz {login.title()}")
+
+
+# son1 = int(input("1-sonni kiriting "))
+# son2 = int(input("2-sonni kiriting "))
+# if son1 == son2:
+#    print('ikki son teng')
+
+# son = int(input("son kiriting "))
+# print("son musbat") if son > 0 else print("son manfiy")
+
+
+son = float(input("son kiritng: "))
+print(f'{son} sonning ildizi {son ** (1/2)}') if son > 0 else print("musbat son kiting")
