@@ -542,6 +542,7 @@ import math
 #     print('sizga muzeyga kirish 20000 som')
 
 
+
 # son1 = float(input('1-sonni kiriting '))
 # son2 = float(input('2-sonni kiriting '))
 # if son1 == son2:
@@ -551,6 +552,8 @@ import math
 # else:
 #     print(f'{son1}<{son2}')    
     
+
+
     
 # bozor = ['piyoz', 'karam', 'sabzi', 'kartoshka', 'shalgom', 'balgar', 'bodring', 'pomidor', 'sarimsoq', 'joxori']
 # mahsulotlar = []
@@ -573,6 +576,8 @@ import math
 #         print(mahsulot)
 # else:
 #     print('siz soragan mahsulotlar dokonda bor')
+
+
    
 # users = ['ayyubiy', 'ayyub', 'djigar', 'polohmon', 'ikrom']
 
@@ -583,17 +588,26 @@ import math
 # else:
 #     print(f'Hush kelibsiz, {login.title()}')
 
-son = int(input('butun son kiriting '))
 
-for n in range(2,11):
-    if not (son%n):
-        print(f'{son} soni {n} ga qoldiqsiz bolinadi')
+
+# son = int(input('butun son kiriting '))
+
+# for n in range(2,11):
+#     if not (son%n):
+#         print(f'{son} soni {n} ga qoldiqsiz bolinadi')
 
     
-   
+# /////////////////////
+
+#  SintaxError
+
+# print ("Hello world")
+# for n in range(10): 
+#   print(n)
+#   print(n+1)
     
-    
-    
+# son = int(input("Istalgan sonni kiriting"))
+# print(f'{son} ning kvadrati {son**2} ga teng')   
     
     
     
