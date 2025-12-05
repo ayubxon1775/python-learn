@@ -430,5 +430,105 @@ import math
 # print("son musbat") if son > 0 else print("son manfiy")
 
 
-son = float(input("son kiritng: "))
-print(f'{son} sonning ildizi {son ** (1/2)}') if son > 0 else print("musbat son kiting")
+# son = float(input("son kiritng: "))
+# print(f'{son} sonning ildizi {son ** (1/2)}') if son > 0 else print("musbat son kiting")
+
+# //////////
+
+#  if elif else
+
+
+# yosh = int(input('yoshingizni kiriting '))
+# if yosh <= 4:
+#     narh = 0
+# elif yosh <= 12:
+#     narh = 5000
+# elif yosh <= 18:
+#     narh = 8000
+# else:
+#     narh = 10000
+# print(f'sizga kirish {narh} som')
+    
+
+# kun = input("bugun qanday kun? >>>")
+# if kun.lower()=='shanba' or kun.lower() =='yakshanba':
+#     print('dam olish kuni')
+# else:
+#     print('bugun ish kuni')
+
+
+# kun = input("bugun qanday kun >>> ")
+# harorat = float(input('bugun harorat qanday >>> '))
+
+# if (kun.lower()=='yakshanba' or kun.lower() =="shanba") and harorat>=30:
+#     print('ketdik chomilishga boramiz')
+# elif (kun.lower()=='yakshanba' or kun.lower() =="shanba") and harorat<30:
+#     print('bugun chomilishga bormaymiz')
+    
+# narh = 15000
+# choy = True
+# salat = True
+
+# if choy and salat:
+#     narh = narh + 10000
+# elif choy or salat:
+#     narh = narh + 5000
+
+# print(f'Jami {narh} som')   
+
+
+# narh = 15000
+# choy = 1
+# salat = 0
+# non = 1
+# kompot = 1
+# assort = 0
+
+# if choy:
+#     print('mijoz choy sotib oldi')
+#     narh = narh + 3000
+
+# if salat:
+#     print('mijoz salat sotib oldi')
+#     narh = narh + 5000
+
+# if non:
+#     print('mijoz non sotib oldi')
+#     narh = narh + 2000
+
+# if kompot:
+#     print('mijoz kompot sotib oldi')
+#     narh = narh + 5000
+
+# if assort:
+#     print('mijoz assort sotib oldi')
+#     narh = narh + 15000
+
+# print(f'Jami {narh} boldi')
+
+# menu = ['osh', 'qozonkabob', 'shashlik', 'norin', 'somsa']
+# 'manti' in menu
+
+# ovqat = input('Nima ovqat buyurasiz \n >>> ')
+# if ovqat.lower() in menu:
+#     print("buyurtmangiz qabul qilindi")
+# else:
+#     print('bunday taom bizda yoq')
+
+
+menu = ['osh', 'qozonkabob', 'shashlik', 'norin', 'somsa']
+buyurtmalar = ['osh', 'somsa', 'manti', 'shashlik']
+
+for taom in buyurtmalar:
+    if taom in menu:
+        print(f'menuda {taom} bor')
+    else:
+        print(f'kechirasiz menuda {taom} yoq')
+
+
+
+
+
+
+
+
