@@ -516,19 +516,91 @@ import math
 #     print('bunday taom bizda yoq')
 
 
-menu = ['osh', 'qozonkabob', 'shashlik', 'norin', 'somsa']
-buyurtmalar = ['osh', 'somsa', 'manti', 'shashlik']
+# menu = ['osh', 'qozonkabob', 'shashlik', 'norin', 'somsa']
+# buyurtmalar = ['osh', 'somsa', 'manti', 'shashlik']
 
-for taom in buyurtmalar:
-    if taom in menu:
-        print(f'menuda {taom} bor')
-    else:
-        print(f'kechirasiz menuda {taom} yoq')
+# for taom in buyurtmalar:
+#     if taom in menu:
+#         print(f'menuda {taom} bor')
+#     else:
+#         print(f'kechirasiz menuda {taom} yoq')
+
+# son = int(input('juft son kiriting: '))
+# if son % 2 == 0:
+#     print('Rahmat')
+# else:
+#     print('bu son juft emas')
 
 
 
+# age = int(input('yoshingizni kiriting '))
+# if age <= 4 or age >= 60:
+#     print('sizga muzeyga kirish bepul')
+# elif age <= 18:
+#     print('sizga muzeyga kirish 10000 som')
+# elif age > 18:
+#     print('sizga muzeyga kirish 20000 som')
 
 
+# son1 = float(input('1-sonni kiriting '))
+# son2 = float(input('2-sonni kiriting '))
+# if son1 == son2:
+#     print(f'{son1}={son2}')
+# elif son1 > son2:
+#     print(f'{son1}>{son2}')
+# else:
+#     print(f'{son1}<{son2}')    
+    
+    
+# bozor = ['piyoz', 'karam', 'sabzi', 'kartoshka', 'shalgom', 'balgar', 'bodring', 'pomidor', 'sarimsoq', 'joxori']
+# mahsulotlar = []
 
 
+# for n in range(5):
+#     mahsulotlar.append(input(f"Savatga {n+1}-mahsulotni kiriting "))
 
+# bor_mahsulotlar = []
+# mavjud_emas = []
+# for mahsulot in mahsulotlar:
+#     if mahsulot in bozor:
+#         bor_mahsulotlar.append(mahsulot)
+#     else:
+#         mavjud_emas.append(mahsulot)
+        
+# if mavjud_emas:
+#     print(f'dokonimizda quyidagi mahsulotlar yoq:')
+#     for mahsulot in mavjud_emas:
+#         print(mahsulot)
+# else:
+#     print('siz soragan mahsulotlar dokonda bor')
+   
+# users = ['ayyubiy', 'ayyub', 'djigar', 'polohmon', 'ikrom']
+
+# login = input("yangi login tanglang ")
+
+# if login in users:
+#     print('login band yangi login tanglang')        
+# else:
+#     print(f'Hush kelibsiz, {login.title()}')
+
+son = int(input('butun son kiriting '))
+
+for n in range(2,11):
+    if not (son%n):
+        print(f'{son} soni {n} ga qoldiqsiz bolinadi')
+
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
