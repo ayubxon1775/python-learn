@@ -617,7 +617,7 @@ import math
 # print(car_0['model'])
 # print(car_0['rang'])    
     
-en_uz = {'apple': 'olma', 'apricot': 'o\'rik', 'banana': 'banan'}
+# en_uz = {'apple': 'olma', 'apricot': 'o\'rik', 'banana': 'banan'}
 
 # print(en_uz['apricot'])
     
@@ -641,23 +641,47 @@ en_uz = {'apple': 'olma', 'apricot': 'o\'rik', 'banana': 'banan'}
 # print(talaba_0)
 
 
-telefonlar = {
-    'ali': 'iphone X',
-    'vali': 'galaxy s9',
-    'olim': 'mi 10 pro',
-    'orif': 'nokia 3310',
-    'anvar': 'pixel 3xl' 
-    }
+# telefonlar = {
+#     'ali': 'iphone X',
+#     'vali': 'galaxy s9',
+#     'olim': 'mi 10 pro',
+#     'orif': 'nokia 3310',
+#     'anvar': 'pixel 3xl' 
+#     }
 
-# phone =telefonlar['ali']
-# print(f'alining telfoni {phone}')
+# # phone =telefonlar['ali']
+# # print(f'alining telfoni {phone}')
 
-meva = en_uz.get('book', 'bunday meva mavjud emas')
-print(meva)
+# meva = en_uz.get('book', 'bunday meva mavjud emas')
+# print(meva)
 
+#  vazifa
 
+# otam = {'ism': 'Yunusxon', 't_yil': '1979', 'shahri': 'namangan'}
+# print(f'Otamning ismi {otam['ism']}, {otam['t_yil']} da \
+# {otam['shahri']}da tugilgan')
 
+# sev_taomlar = {'otam': 'manti', 'onam': 'shashlik', 'ukam': 'somsa',\
+# 'singlim_1': 'lavash', 'singlim2': 'osh'}
 
+# print(f'Otamning sevimli taomi {sev_taomlar['otam']}')
+# print(f'Onamni sevimli taomi {sev_taomlar['onam']}')
+# print(f'Ukamni sevimli taomi {sev_taomlar['ukam']}')
+            
+python_lugat = {'integer': 'butun son','float': 'onlik son',\
+'string': 'matn','if': 'agar','else': 'agarki', 'true': 'ha',\
+ 'false': 'yoq'}
+
+soz = input('soz kiriting ')
+
+# print(python_lugat.get( soz, 'bunday soz mavjud emas'))
+
+result = python_lugat.get(soz)
+
+if result == None:
+    print('bunday soz mavjud emas')
+else:
+    print(f'{soz.title()} sozi {result} boladi')
 
 
 
