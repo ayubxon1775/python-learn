@@ -609,12 +609,68 @@ import math
 # son = int(input("Istalgan sonni kiriting"))
 # print(f'{son} ning kvadrati {son**2} ga teng')   
     
+# ///////////
+
+#  Dictionary
+
+# car_0 = {'model': 'ferrari', 'rang': 'qizil'}
+# print(car_0['model'])
+# print(car_0['rang'])    
     
+en_uz = {'apple': 'olma', 'apricot': 'o\'rik', 'banana': 'banan'}
+
+# print(en_uz['apricot'])
     
+# mevalar ={'olma': 10000, 'tarvuz': 8000, 'qovun': 10000}
+# print(mevalar['olma'])
     
-    
-    
-    
-    
-    
+
+# talaba_0 = {'ism': 'murod olimov',\
+#             'yosh': 25,\
+#             't_yil': 2000\
+#             }
+
+# print(f'{talaba_0['ism']}, {talaba_0['t_yil']}-yilda tugilgan,\
+#  {talaba_0['yosh']} yoshda')
+ 
+# talaba_0['kurs'] = 4
+# talaba_0['fakultet'] = 'informatika'
+# talaba_0['ism'] = 'abdulloh'
+
+# del talaba_0['yosh']
+# print(talaba_0)
+
+
+telefonlar = {
+    'ali': 'iphone X',
+    'vali': 'galaxy s9',
+    'olim': 'mi 10 pro',
+    'orif': 'nokia 3310',
+    'anvar': 'pixel 3xl' 
+    }
+
+# phone =telefonlar['ali']
+# print(f'alining telfoni {phone}')
+
+meva = en_uz.get('book', 'bunday meva mavjud emas')
+print(meva)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
