@@ -668,24 +668,100 @@ import math
 # print(f'Onamni sevimli taomi {sev_taomlar['onam']}')
 # print(f'Ukamni sevimli taomi {sev_taomlar['ukam']}')
             
-python_lugat = {'integer': 'butun son','float': 'onlik son',\
-'string': 'matn','if': 'agar','else': 'agarki', 'true': 'ha',\
- 'false': 'yoq'}
+# python_lugat = {'integer': 'butun son','float': 'onlik son',\
+# 'string': 'matn','if': 'agar','else': 'agarki', 'true': 'ha',\
+#  'false': 'yoq'}
 
-soz = input('soz kiriting ')
+# soz = input('soz kiriting ')
 
-# print(python_lugat.get( soz, 'bunday soz mavjud emas'))
+# # print(python_lugat.get( soz, 'bunday soz mavjud emas'))
 
-result = python_lugat.get(soz)
+# result = python_lugat.get(soz)
 
-if result == None:
-    print('bunday soz mavjud emas')
-else:
-    print(f'{soz.title()} sozi {result} boladi')
-
-
+# if result == None:
+#     print('bunday soz mavjud emas')
+# else:
+#     print(f'{soz.title()} sozi {result} boladi')
 
 
+# ////////////
+
+# lugat bilan ishlash
+
+# talaba_0 = {
+#     'ism': 'alijon',
+#     'familya': 'shamshiyev',
+#     'yosh': 22,
+#     'fakultet': 'matematika',
+#     'kurs': 4
+#     }
+
+# print(talaba_0.items())
+# for key, value in talaba_0.items():
+#     print(f'kalit: {key}')
+#     print(f'qiymat: {value} \n')  
+    
+# telefonlar = {
+#     'ali': 'iphone x',
+#     'vali': 'galaxy s9',
+#     'olim': 'mi 10 pro',
+#     'orif': 'nokia 3310',
+#     'ilhom': 'iphone x',
+#     'adham': 'iphone x',
+#     'nozim': 'galaxy s9',
+#     }
+
+# for key, value in telefonlar.items():
+#     print(f'{key.title()} ning telefoni {value}')
+    
+# print(telefonlar.keys())  
+    
+# for key in telefonlar.keys():
+#     print(f'{key}') 
+    
+    
+    
+# mahsulotlar = {
+#     'olma': 10000,
+#     'anor': 20000,
+#     'uzum': 40000,
+#     'anjir':25000,
+#     'shaftoli': 30000
+#     }
+
+# for key in mahsulotlar.keys():
+#     print(f'mahsulotlarning kaliti {key.title()}')
+
+# print('Dokondagi mahsulotlar:')
+# for mahsulot in mahsulotlar:
+#     print(f'{mahsulot.title()}')
+    
+# bozorlik = ['anor', 'uzum', 'non', 'baliq']
+
+# for mahsulot in mahsulotlar:
+#     if mahsulot in bozorlik:
+#         print(f"{mahsulot.title()} {mahsulotlar[mahsulot]}")
+    
+    
+# for buyum in bozorlik:
+#     if buyum not in mahsulotlar:
+#         print(f'iltimos dokonimizga {buyum} ham olib keling')
+    
+
+# print('Dokonimizdagi mahsulotlar')
+# for mahsulot in sorted(mahsulotlar):
+#     print(mahsulot.title())
+# print('foydalanuvchilar quyidagi telefonlarni ishlatishadi')
+# for tel in telefonlar.values():
+#     print(tel)    
+    
+# for tel in set(telefonlar.values()):
+#     print(tel)    
+        
+    
+# toys = {'ball', 'car', 'lamp', 'ball'}    
+    
+    
 
 
 
