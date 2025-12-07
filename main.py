@@ -924,36 +924,135 @@ import math
 #         print(f'{til.upper()} ', end='')
 
 
-hamkasblar = {
-    'ali': {'familiya': 'valiyev',
-            't_yil': 1995,
-            'malumot': 'oliy',
-            'tillar': ['python', 'c++']
-            },
+# hamkasblar = {
+#     'ali': {'familiya': 'valiyev',
+#             't_yil': 1995,
+#             'malumot': 'oliy',
+#             'tillar': ['python', 'c++']
+#             },
     
-    'vali': {'familiya': 'aliyev',
-            't_yil': 2001,
-            'malumot': 'orta maxsus',
-            'tillar': ['html', 'css', 'js']
-            },
+#     'vali': {'familiya': 'aliyev',
+#             't_yil': 2001,
+#             'malumot': 'orta maxsus',
+#             'tillar': ['html', 'css', 'js']
+#             },
                        
-    'hasan': {'familiya': 'husanov',
-            't_yil': 1999,
-            'malumot': 'maxsus',
-            'tillar': ['python', 'php']
-            }
-    }
+#     'hasan': {'familiya': 'husanov',
+#             't_yil': 1999,
+#             'malumot': 'maxsus',
+#             'tillar': ['python', 'php']
+#             }
+#     }
 
 
-for ism, info in hamkasblar.items():
-    print(f'\n{ism.title()} {info['familiya'].title()}, '
-          f'{info['t_yil']}-yilda tugilgan.\n'
-          f'Malumoti: {info['malumot']}.\n'
-          "Quyidagi dasturlash tillarini biladi"
+# for ism, info in hamkasblar.items():
+#     print(f'\n{ism.title()} {info['familiya'].title()}, '
+#           f'{info['t_yil']}-yilda tugilgan.\n'
+#           f'Malumoti: {info['malumot']}.\n'
+#           "Quyidagi dasturlash tillarini biladi"
+#           )
+#     for til in info['tillar']:
+#         print(til)
+
+
+# vazifa
+
+# buxoriy = {
+#         'ism': 'Abu Abdulloh Muhammad ibn Ismoil',
+#         't_yil': 810,
+#         'manzil': "Buxoro",
+#         'yosh': 60,
+#         'asarlar': ["Al-jome’ as-sahih", "Al-adab al-mufrad", "At-tarix al-kabir", "At-tarix as-sag‘ir"]
+#         }
+    
+# qodiriy = {
+#         'ism': 'Abdulla Qodoriy',
+#         't_yil': 1894,
+#         'manzil': "Toshkent",
+#         'yosh': 44,
+#         'asarlar': ["O'tkan kunlar","Mehrobdan Chayon","Obid ketmon"],
+#         }
+    
+# vohidov = {
+#        'ism': 'Erkin Vohidov',
+#        't_yil': 1936,
+#        'manzil': "Farg'ona",
+#        'yosh': 80,
+#        'asarlar':["Tong nafasi","Qo'shiqlarim sizga","O'zbegim","Qiziquvchan Matmusa"],
+#         }
+
+# navoiy = {
+#         'ism': 'Alisher Navoiy',
+#         't_yil': 1441,
+#         'manzil': "Xirot",
+#         'yosh': 60,
+#         'asarlar':["Xamsa","Lison ut-Tayr","Mahbub Al-Qulub",'Munojot']
+#         }      
+
+
+# shaxslar = [buxoriy, qodiriy, vohidov, navoiy]
+
+# for shaxs in shaxslar:
+#     ism = shaxs['ism']
+#     asarlar = shaxs['asarlar']
+#     print(f"\n{ism} ning mashxur asarlari: ")
+#     for asar in asarlar:
+#         print(asar)
+        
+        
+# kinolar = {
+#     'ali':['Terminator','Rambo','Titanic'],
+#     'vali':['Tenet','Inception','Interstellar'],
+#     'hasan':['Abdullajon','Bomba','Shaytanat'],
+#     'husan':['Mahallada duv-duv gap','John Wick']
+#     }
+
+
+# for key, values in kinolar.items():
+#     print(f'\n{key.title()}ning sevimli kinosi')
+#     for value in values:
+#         print(f'{value}')
+
+          
+davlatlar = {
+    "o'zbekiston":{'poytaxt':"toshkent",
+                   'maydon':448978,
+                   'aholi':33_000_000,
+                   'pul birligi':"so'm"
+                   },
+    "rossiya":{'poytaxt':"moskva",
+                   'maydon':17_098_246,
+                   'aholi':144_000_000,
+                   'pul birligi':"rubl"
+                   },
+    "aqsh":{'poytaxt':"vashington",
+                   'maydon':9_631_418,
+                   'aholi':327_000_000,
+                   'pul birligi':"dollar"},
+    "malayziya":{'poytaxt':"kuala-lumpur",
+                   'maydon':329750,
+                   'aholi':25_000_000,
+                   'pul birligi':"rinngit"}
+    }     
+
+for davlat, malumot in davlatlar.items():
+    print(f'{davlat.title()}ning poytaxti {malumot['poytaxt']} ' ,
+          f'Hududi {malumot['maydon']} '
+          f'Aholisi {malumot['aholi']} '
+          f'Pul birligi {malumot['pul birligi']}'
           )
-    for til in info['tillar']:
-        print(til)
 
+foy_davlat = input('qaysi davlatni malumoti kerak ')
 
-
-
+if foy_davlat in davlatlar:
+    info = davlatlar[foy_davlat]
+    print(f'{foy_davlat.title()}ning poytaxti {info['poytaxt']} ' ,
+          f'Hududi {info['maydon']} '
+          f'Aholisi {info['aholi']} '
+          f'Pul birligi {info['pul birligi']}'
+          )
+else:
+    print('bizda bunday davlat yoq')        
+        
+        
+        
