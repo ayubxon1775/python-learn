@@ -761,16 +761,79 @@ import math
     
 # toys = {'ball', 'car', 'lamp', 'ball'}    
     
+# vazifa
+
+# python_lugat = {
+#     'integer': 'butun son',
+#     'float': 'onlik son',
+#     'string': 'matn',
+#     'if': 'agar',
+#     'else': 'agarki',
+#     'true': 'ha',
+#     'false': 'yoq',
+#     'list': 'royxat',
+#     'dictionary': 'lugat',
+#     'for': 'sikl',
+#     }
+
+# print('lugatlar')
+# for kalit in sorted(python_lugat):
+#     print(f'{kalit} - {python_lugat[kalit]}')
+
+
+# davlatlar = {
+#     "o'zbekiston": "toshkent",
+#     "aqsh": "washington",
+#     "rossiya": "moskva",
+#     "qozogiston": "ostona",
+#     "saudiya": "jidda",
+#     "qirg'iziston": "bishkek",
+#     }
+
+
+# print('Davlatlar royxatlar')
+# for davlat in sorted(davlatlar):
+#     print(davlat.upper())
+
+
+# print('Poytaxtlar royxatlar')
+# for poytaxt in sorted(davlatlar.values()):
+#     print(poytaxt.title())
+
+# country = input('Qaysi davlatning poytaxtini bilishni istaysiz?:').lower()
+# capital = davlatlar.get(country)
+# if capital == None:
+#     print(f'bizdan bunday {dv_kirit} yoq')
+# else:
+#     print(f'{country} ning poytaxti {capital}' )
+
+
+ovqatlar = {
+    'osh': 25000,
+    'shashlik': 15000,
+    'shorva': 20000,
+    'manti':10000,
+    'somsa': 10000,
+    'lagmon': 25000,
+    'norin': 30000,
+    'salat': 8000,
+    'kabob': 22000,
+    'qotirma': 28000,
+    }
     
-
-
-
-
-
-
-
-
-
-
-
+print('3 taom buyurtma bering \n')
+buyurtmalar = []
+for n in range(3):
+    buyurtmalar.append(input(f'{n+1}-buyurtmani bering '))
+    
+for buyurtma in buyurtmalar:
+    if buyurtma in ovqatlar:
+        print(f'{buyurtma.title()} ning narxi {ovqatlar[buyurtma]} som')
+    else:
+        print(f'{buyurtma} bunday taom bizda yoq')
+            
+    
+    
+    
+    
     
