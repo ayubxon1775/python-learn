@@ -808,32 +808,152 @@ import math
 #     print(f'{country} ning poytaxti {capital}' )
 
 
-ovqatlar = {
-    'osh': 25000,
-    'shashlik': 15000,
-    'shorva': 20000,
-    'manti':10000,
-    'somsa': 10000,
-    'lagmon': 25000,
-    'norin': 30000,
-    'salat': 8000,
-    'kabob': 22000,
-    'qotirma': 28000,
-    }
+# ovqatlar = {
+#     'osh': 25000,
+#     'shashlik': 15000,
+#     'shorva': 20000,
+#     'manti':10000,
+#     'somsa': 10000,
+#     'lagmon': 25000,
+#     'norin': 30000,
+#     'salat': 8000,
+#     'kabob': 22000,
+#     'qotirma': 28000,
+#     }
     
-print('3 taom buyurtma bering \n')
-buyurtmalar = []
-for n in range(3):
-    buyurtmalar.append(input(f'{n+1}-buyurtmani bering '))
+# print('3 taom buyurtma bering \n')
+# buyurtmalar = []
+# for n in range(3):
+#     buyurtmalar.append(input(f'{n+1}-buyurtmani bering '))
     
-for buyurtma in buyurtmalar:
-    if buyurtma in ovqatlar:
-        print(f'{buyurtma.title()} ning narxi {ovqatlar[buyurtma]} som')
-    else:
-        print(f'{buyurtma} bunday taom bizda yoq')
+# for buyurtma in buyurtmalar:
+#     if buyurtma in ovqatlar:
+#         print(f'{buyurtma.title()} ning narxi {ovqatlar[buyurtma]} som')
+#     else:
+#         print(f'{buyurtma} bunday taom bizda yoq')
             
+
+#  //////////////
+
+# nesting
+
+# car0 = {
+#         'model': 'lacetti',
+#         'rang': 'oq',
+#         'yil': 2018,
+#         'narh': 13000,
+#         'km': 50000,
+#         'karobka': 'avtomat'
+#         }
     
+# car1 = {
+#         'model': 'nexia 3',
+#         'rang': 'qora',
+#         'yil': 2015,
+#         'narh': 9000,
+#         'km': 89000,
+#         'karobka': 'mehanika'
+#         } 
     
+# car2 = {
+#         'model': 'gentra',
+#         'rang': 'qizil',
+#         'yil': 2019,
+#         'narh': 15000,
+#         'km': 20000,
+#         'karobka': 'mehanika'
+#         }  
+
+
+
+# cars = [car0, car1, car2]
+# for car in cars:
+#     print(f'{car['model'].title()}, '
+#           f'{car['rang']} rang, '
+#           f'{car['yil']}-yil, {car['narh']} $'
+#           ) 
+
+# print(f'{cars[0]['model']}',
+#       f'{cars[0]['rang']}'
+#       )
+
+
+# malibus = []
+# for n in range(10):
+#     new_car = {
+#                'model': 'malibu',
+#                'rang': None,
+#                'yil': 2025,
+#                'narh': None,
+#                'km': 0,
+#                'karobka': 'avtomat' 
+#         }
+#     malibus.append(new_car)
+
+# for malibu in malibus[:3]:
+#     malibu['rang'] = 'qizil'
     
+# for malibu in malibus[3:6]:
+#     malibu['rang'] = 'qora'    
     
+# for malibu in malibus[6:]:
+#     malibu['rang'] = 'qora'
+#     malibu['karobka'] = 'mexanika'
+
+
+# for malibu in malibus:
+#     if malibu['karobka'] == 'avto':
+#         malibu['narh'] = 40000
+#     else:
+#         malibu['narh'] = 35000
+
+# for malibu in malibus:
+#     print(malibu)
+
+# dasturchilar = {
+#     'ali': ['python', 'c++'],
+#     'vali': ['html', 'css', 'js'],
+#     'hasan': ['php', 'sql'],
+#     'husan': ['python', 'php'],
+#     'maryam': ['c++', 'c#']
+#     }
+
+# for ism, tillar in dasturchilar.items():
+#     print(f'\n{ism.title()} quyidagi tillarni biladi')
+#     for til in tillar:
+#         print(f'{til.upper()} ', end='')
+
+
+hamkasblar = {
+    'ali': {'familiya': 'valiyev',
+            't_yil': 1995,
+            'malumot': 'oliy',
+            'tillar': ['python', 'c++']
+            },
     
+    'vali': {'familiya': 'aliyev',
+            't_yil': 2001,
+            'malumot': 'orta maxsus',
+            'tillar': ['html', 'css', 'js']
+            },
+                       
+    'hasan': {'familiya': 'husanov',
+            't_yil': 1999,
+            'malumot': 'maxsus',
+            'tillar': ['python', 'php']
+            }
+    }
+
+
+for ism, info in hamkasblar.items():
+    print(f'\n{ism.title()} {info['familiya'].title()}, '
+          f'{info['t_yil']}-yilda tugilgan.\n'
+          f'Malumoti: {info['malumot']}.\n'
+          "Quyidagi dasturlash tillarini biladi"
+          )
+    for til in info['tillar']:
+        print(til)
+
+
+
+
