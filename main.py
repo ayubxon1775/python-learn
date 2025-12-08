@@ -1014,45 +1014,160 @@ import math
 #         print(f'{value}')
 
           
-davlatlar = {
-    "o'zbekiston":{'poytaxt':"toshkent",
-                   'maydon':448978,
-                   'aholi':33_000_000,
-                   'pul birligi':"so'm"
-                   },
-    "rossiya":{'poytaxt':"moskva",
-                   'maydon':17_098_246,
-                   'aholi':144_000_000,
-                   'pul birligi':"rubl"
-                   },
-    "aqsh":{'poytaxt':"vashington",
-                   'maydon':9_631_418,
-                   'aholi':327_000_000,
-                   'pul birligi':"dollar"},
-    "malayziya":{'poytaxt':"kuala-lumpur",
-                   'maydon':329750,
-                   'aholi':25_000_000,
-                   'pul birligi':"rinngit"}
-    }     
+# davlatlar = {
+#     "o'zbekiston":{'poytaxt':"toshkent",
+#                    'maydon':448978,
+#                    'aholi':33_000_000,
+#                    'pul birligi':"so'm"
+#                    },
+#     "rossiya":{'poytaxt':"moskva",
+#                    'maydon':17_098_246,
+#                    'aholi':144_000_000,
+#                    'pul birligi':"rubl"
+#                    },
+#     "aqsh":{'poytaxt':"vashington",
+#                    'maydon':9_631_418,
+#                    'aholi':327_000_000,
+#                    'pul birligi':"dollar"},
+#     "malayziya":{'poytaxt':"kuala-lumpur",
+#                    'maydon':329750,
+#                    'aholi':25_000_000,
+#                    'pul birligi':"rinngit"}
+#     }     
 
-for davlat, malumot in davlatlar.items():
-    print(f'{davlat.title()}ning poytaxti {malumot['poytaxt']} ' ,
-          f'Hududi {malumot['maydon']} '
-          f'Aholisi {malumot['aholi']} '
-          f'Pul birligi {malumot['pul birligi']}'
-          )
+# for davlat, malumot in davlatlar.items():
+#     print(f'{davlat.title()}ning poytaxti {malumot['poytaxt']} ' ,
+#           f'Hududi {malumot['maydon']} '
+#           f'Aholisi {malumot['aholi']} '
+#           f'Pul birligi {malumot['pul birligi']}'
+#           )
 
-foy_davlat = input('qaysi davlatni malumoti kerak ')
+# foy_davlat = input('qaysi davlatni malumoti kerak ')
 
-if foy_davlat in davlatlar:
-    info = davlatlar[foy_davlat]
-    print(f'{foy_davlat.title()}ning poytaxti {info['poytaxt']} ' ,
-          f'Hududi {info['maydon']} '
-          f'Aholisi {info['aholi']} '
-          f'Pul birligi {info['pul birligi']}'
-          )
-else:
-    print('bizda bunday davlat yoq')        
-        
-        
-        
+# if foy_davlat in davlatlar:
+#     info = davlatlar[foy_davlat]
+#     print(f'{foy_davlat.title()}ning poytaxti {info['poytaxt']} ' ,
+#           f'Hududi {info['maydon']} '
+#           f'Aholisi {info['aholi']} '
+#           f'Pul birligi {info['pul birligi']}'
+#           )
+# else:
+#     print('bizda bunday davlat yoq')        
+# 
+
+# ////////////
+
+
+# input() va while
+
+# ism = input('Ismingizni kiriting ')
+# savol = f'Salom, {ism.title()}. Yoshingiz nechchida '
+# yosh = input(savol)
+# yosh = int(yosh)
+# height = input('Boyingiz necha metr ')
+# height = float(height)
+
+
+# son = 1
+# while son <=5:
+#     print(son, end=" ")
+#     son += 1
+
+# print('dastur tugadi')
+
+# print('Kiritilgan sonning kvadratini qaytaruvchi dastur')
+# savol = 'Istalgan son kiriting'
+# savol += "(dasturni toxtatish uchun 'exit' deb yozing ): "
+# qiymat = ''
+# while qiymat != 'exit':
+#     qiymat = input(savol)
+#     if qiymat != 'exit':
+#         print(float(qiymat)**2)
+# print('dastur tugadi')
+
+
+# print('Kiritilgan sonning kvadratini qaytaruvchi dastur')
+# savol = 'Istalgan son kiriting'
+# savol += "(dasturni toxtatish uchun 'exit' deb yozing ): "
+
+# ishora = True
+# while ishora:
+#     qiymat = input(savol)
+#     if qiymat == 'exit':
+#         ishora = False
+#     else:
+#         print(float(qiymat)**2)
+# print('dastur toxtadi')
+
+
+# print('Kiritilgan sonning kvadratini qaytaruvchi dastur')
+# savol = 'Istalgan son kiriting'
+# savol += "(dasturni toxtatish uchun 'exit' deb yozing ): "
+
+# while True:
+#     qiymat = input(savol)
+#     if qiymat == 'exit':
+#         break
+#     else:
+#         print(float(qiymat)**2)
+
+# print('dastur toxtadi')    
+
+# sonlar = list(range(1,11))
+# for son in sonlar:
+#     if son == 5:
+#         break
+#     print(f'{son} ning kvadrati {son**2} ga teng')
+
+
+# sonlar = list(range(1,11))
+# for son in sonlar:
+#     if son == 5:
+#         continue
+#     print(f'{son} ning kvadrati {son**2} ga teng')
+
+
+# son = 0
+# while son < 10:
+#     son += 1
+#     if son % 2 != 0:
+#         continue
+#     else:
+#         print(son)
+
+# son = 0
+# while son < 10:
+#     son += 1
+#     if son % 2 != 0:
+#         continue
+#     else:
+#         print(son)
+
+
+# son = 0
+# while son < 10:
+#     son += 1
+#     if son % 2 != 0:
+#         continue
+#     else:
+#         print(son)
+
+son = 0
+while son < 10:
+    son += 1
+    if son % 2 != 0:
+        continue
+    else:
+        print(son)
+
+
+
+
+
+
+
+
+
+
+
+
