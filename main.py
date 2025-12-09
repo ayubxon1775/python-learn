@@ -1152,22 +1152,92 @@ import math
 #     else:
 #         print(son)
 
-son = 0
-while son < 10:
-    son += 1
-    if son % 2 != 0:
+# son = 0
+# while son < 10:
+#     son += 1
+#     if son % 2 != 0:
+#         continue
+#     else:
+#         print(son)
+
+
+# kitob = "yoqtirgan kitoblarni kiriting "
+# kitob += "dasturni toxtatish uchun 'exit' deb yozing "
+
+# qiymat = ''
+# while qiymat != 'exit':
+#     qiymat = input(kitob)
+# print('dastur tugadi')
+        
+  
+# age = ('yoshingizni kiriting ')
+# age += ('dasturni toxtatish uchun "quit" deb yozing ')
+# age_result= ''
+
+# while age_result != 'exit':
+#     age_result = int(input(age))
+#     if age_result <= 7:
+#         print('chipta narxi 2000 som')
+#     elif age_result > 7 and age_result <= 18:
+#         print('chipta narxi 3000 som')
+#     elif age_result > 18 and age_result < 65:
+#         print('chipta narxi 10000 som')
+#     else:
+#         print('chipta bepul')
+
+
+# age = 'Yoshingizni kiriting '
+
+# while True:
+#     qiymat = input(age)
+#     if qiymat == 'exit' or qiymat == 'stop':
+#         break
+#     yosh = int(qiymat)
+    
+#     if yosh < 7:
+#         narh = 2000
+#     elif 7 <= yosh < 18:
+#         narh = 3000
+#     elif 18 <= yosh < 65:
+#         narh = 10000
+#     else: narh = 0
+    
+#     if narh ==0:
+#         print('Sizga bepul')
+#     else:
+#         print(f'chiptalar {narh} som')
+
+
+
+
+
+savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
+savol += "Musbat son kiriting "
+savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+
+while True:
+    qiymat = input(savol)
+    if qiymat=='Exit':
+        break
+    elif float(qiymat)<0:
         continue
     else:
-        print(son)
+        ildiz = float(qiymat)**(0.5)
+        print(f"{qiymat} ning ildizi {ildiz} ga teng")
 
 
+# savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
+# savol += "Musbat son kiriting "
+# savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
 
-
-
-
-
-
-
-
+# while True:
+#     qiymat = input(savol)
+#     if qiymat=='exit':
+#         break
+#     elif float(qiymat)<0:
+#         continue # agar foydalanuvchi manfiy son kiritsa tsiklni takrorlaymiz
+#     else:
+#         ildiz = float(qiymat)**(0.5)
+#         print(f"{qiymat} ning ildizi {ildiz} ga teng")
 
 
