@@ -1161,6 +1161,9 @@ import math
 #         print(son)
 
 
+# vazifa
+
+
 # kitob = "yoqtirgan kitoblarni kiriting "
 # kitob += "dasturni toxtatish uchun 'exit' deb yozing "
 
@@ -1211,21 +1214,6 @@ import math
 
 
 
-savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
-savol += "Musbat son kiriting "
-savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
-
-while True:
-    qiymat = input(savol)
-    if qiymat=='Exit':
-        break
-    elif float(qiymat)<0:
-        continue
-    else:
-        ildiz = float(qiymat)**(0.5)
-        print(f"{qiymat} ning ildizi {ildiz} ga teng")
-
-
 # savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
 # savol += "Musbat son kiriting "
 # savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
@@ -1235,9 +1223,70 @@ while True:
 #     if qiymat=='exit':
 #         break
 #     elif float(qiymat)<0:
-#         continue # agar foydalanuvchi manfiy son kiritsa tsiklni takrorlaymiz
+#         continue
 #     else:
 #         ildiz = float(qiymat)**(0.5)
 #         print(f"{qiymat} ning ildizi {ildiz} ga teng")
+
+
+#////////////////
+
+# print('Yaqin dostlaringizni royxatini tuzamiz. ')
+# ismlar = []
+# n=1
+# while True:
+#     savol = f'{n}-dostingizni ismini kiriting '
+#     ism = input(savol)
+#     ismlar.append(ism)
+#     takrorlash = input("Yana ism qoshasizmi (ha/yo'q) ")
+#     n+=1
+#     if takrorlash != 'ha':
+#         break
+
+# print('dostlaringizni royxati')
+# for ism in ismlar:
+#     print(ism.title())
+
+# print("Dostingizni yoshini saqlaymiz ")
+# dostlar = {}
+# ishora = True
+# while ishora:
+#     ism = input('dostingizni ismini kiriting ')
+#     yosh = input(f'{ism.title()} ning yoshini kiriting ')
+#     dostlar[ism] = int(yosh)
+    
+#     javob = input("Yana malumot qoshasizmi (ha/yo'q)")
+#     if javob == "yo'q":
+#         ishora = False
+        
+# for ism, yosh in dostlar.items():
+#     print(f'{ism.title()} {yosh} yoshda')
+
+
+# cars = ['lacetti', 'nexia', 'toyoto', 'nexia', 'audi', 'malibu', 'nexia']
+# car = 'lacetti'
+# while car in cars:
+#     cars.remove(car)
+# print(cars)
+
+
+talabalar = ['hasan', 'husan', 'olim', 'botir']
+baholangan_talabalar = {}
+while talabalar:
+    talaba = talabalar.pop()
+    baho = input(f'{talaba.title()}ning bahosini kiriting: ')
+    print(f'{talaba.title()} baholandi')
+    baholangan_talabalar[talaba] = int(baho)
+
+
+
+
+
+
+
+
+
+
+
 
 
