@@ -1231,6 +1231,8 @@ import math
 
 #////////////////
 
+# while list dictionary
+
 # print('Yaqin dostlaringizni royxatini tuzamiz. ')
 # ismlar = []
 # n=1
@@ -1270,23 +1272,65 @@ import math
 # print(cars)
 
 
-talabalar = ['hasan', 'husan', 'olim', 'botir']
-baholangan_talabalar = {}
-while talabalar:
-    talaba = talabalar.pop()
-    baho = input(f'{talaba.title()}ning bahosini kiriting: ')
-    print(f'{talaba.title()} baholandi')
-    baholangan_talabalar[talaba] = int(baho)
+# talabalar = ['hasan', 'husan', 'olim', 'botir']
+# baholangan_talabalar = {}
+# while talabalar:
+#     talaba = talabalar.pop()
+#     baho = input(f'{talaba.title()}ning bahosini kiriting: ')
+#     print(f'{talaba.title()} baholandi')
+#     baholangan_talabalar[talaba] = int(baho)
 
 
+# print('buyurtma qabul qilish ')
+# buyurtmalar = []
+# ishora = True
+# n = 1
+# while ishora:
+#     savol = f'{n}-mahsulotni nomini kiriting '
+#     mahsulot = input(savol)
+#     buyurtmalar.append(mahsulot)
+#     takrorlash = input("Yana mahsulot qo'shasizmi ('ha/yoq) ")
+#     n+= 1    
+#     if takrorlash != 'ha':
+#         break
+    
+# print('Buyurtmalar royxati ')
+# for buyurtma in buyurtmalar:
+#     print(buyurtma.title())
 
 
+# print('e-bozor uchun mahsulot royxati ')
+# mahsulotlar = {}
+# ishora = True
+# n = 0
+# while ishora:
+#     mahsulot = input(f'{n+1} Mahsulot nomini kiriting ')
+#     narh = input(f'{mahsulot.title()} narhini kiriting ')
+#     mahsulotlar[mahsulot] = int(narh)
+#     javob = input('Yana mahsulot qoshmoqchi bolsangiz("ha/yoq") deb yozing ')
+# # %%
+#     n+= 1
+
+#     if javob == "yo'q":
+#         ishora = False
+        
+# # %%
+# for mahsulot, narh in mahsulotlar.items():
+
+#     print(f'{mahsulot}ning narhi {narh} som ')
+    
 
 
+buyurtmalar = ['olma','anjir','uzum','qovun']
+mahsulotlar = {'olma':20000,
+               'shaftoli':25000,
+               'tarvuz':18000,
+               'uzum':22000}
 
-
-
-
-
-
-
+while buyurtmalar:
+    buyurtma = buyurtmalar.pop()
+    if buyurtma in mahsulotlar.keys():
+        narh = mahsulotlar[buyurtma]
+        print(f'{buyurtma.title()}-{narh} som')
+    else:
+        print(f'bizda {buyurtma} yoq')
