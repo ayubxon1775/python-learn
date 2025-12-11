@@ -1321,16 +1321,56 @@ import math
     
 
 
-buyurtmalar = ['olma','anjir','uzum','qovun']
-mahsulotlar = {'olma':20000,
-               'shaftoli':25000,
-               'tarvuz':18000,
-               'uzum':22000}
+# buyurtmalar = ['olma','anjir','uzum','qovun']
+# mahsulotlar = {'olma':20000,
+#                'shaftoli':25000,
+#                'tarvuz':18000,
+#                'uzum':22000}
 
-while buyurtmalar:
-    buyurtma = buyurtmalar.pop()
-    if buyurtma in mahsulotlar.keys():
-        narh = mahsulotlar[buyurtma]
-        print(f'{buyurtma.title()}-{narh} som')
-    else:
-        print(f'bizda {buyurtma} yoq')
+# while buyurtmalar:
+#     buyurtma = buyurtmalar.pop()
+#     if buyurtma in mahsulotlar.keys():
+#         narh = mahsulotlar[buyurtma]
+#         print(f'{buyurtma.title()}-{narh} som')
+#     else:
+#         print(f'bizda {buyurtma} yoq')
+
+
+
+# def salom_ber():
+#     """Salom beruvchi funksiya"""
+#     print('Assalomu aleykum')
+# salom_ber()
+
+# def salom_ber(ism):
+#     """Foydalanuvchini ismini qabul qilib,
+#     unga salom beruvchi funksiya"""
+#     print(f'Assalomu aleykum, hurmatli {ism.title()}!')
+
+# salom_ber('hasan')
+# salom_ber('olim')
+ 
+# salom_ber()
+
+# def toliq_ism(ism, familya):
+#     """Foydalanuvchi ism va familyasini jamlab chiqaruvchi funksiya"""
+#     print(f'Foydalanuvchi ism {ism.title()}\n'
+#           f'Foydalanuvchi familyasi {familya.title()}')
+
+# toliq_ism('olim', 'hakimov')
+# toliq_ism('ayubxon', 'ahmatxonov')  
+
+# def yosh_hisobla(ism, t_yil):
+#     """Foydalanuvchi ism va tug'ilgan yilini jamlab chiqaruvchi funksiya"""
+#     print(f'Foydalanuvchi ism {ism.title()}\n'
+#           f'Foydalanuvchi tugilgan yili {t_yil}')
+
+# yosh_hisobla(t_yil=1997, ism='olim')
+# toliq_ism(2000, 'ahmatxonov')  
+
+def yosh_hisobla(t_yil, joriy_yil = 2025):
+    """Foydalanuvchi tugilgan yilidan uning yoshini hisoblaydi"""
+    print(f'Siz {joriy_yil-t_yil} yoshdasiz')
+yosh_hisobla(2000, 2025)
+yosh_hisobla(2000)
+yosh_hisobla(2025,2025)
