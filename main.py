@@ -1420,9 +1420,105 @@ import math
 # son_ol(2,5)
 
 
-def bolinish(son):
-    for n in range(2,10):
-        if not son%n:
-            print(f'{son} {n} ga qoldiqsiz bolinadi ')
+# def bolinish(son):
+#     for n in range(2,10):
+#         if not son%n:
+#             print(f'{son} {n} ga qoldiqsiz bolinadi ')
 
-bolinish(15)
+# bolinish(15)
+
+
+# def toliq_ism_yasa(ism, familya):
+#     """To'liq ismni qaytaruvchi funksiya"""
+#     ism_yasa = f"{ism} {familya}"
+#     return ism_yasa
+# result = toliq_ism_yasa('ayubxon', 'axmatxonov')
+# result1 = toliq_ism_yasa('sobitxon', 'axmatxonov')
+
+# print(f'Darsga kelgamagan talabalar {result} {result1}')
+
+
+# def toliq_ism_yasa(ism, familya, otasining_ismi = ''):
+#     """To'liq ism qaytaruvchi funksiya"""
+#     if otasining_ismi:
+#         toliq_ism = f"{ism} {familya} {otasining_ismi}"
+#     else:
+#         toliq_ism = f"{ism} {familya}"
+#     return toliq_ism.title()
+
+# talaba1 = toliq_ism_yasa('ayubxon', 'axmatxonov')
+# talaba2 = toliq_ism_yasa('sobitxon', 'axmatxonov', 'Yusufxon ogli')
+
+# print(f'Darsga kelmagan oquvchilar {talaba1} {talaba2}')
+
+
+# def avto_info(kompaniya, model, rang, korobka, yili, narh = None):
+#     avto = {'kompaniya': kompaniya,
+#         'model': model,
+#         'rang': rang,
+#         'korobka': korobka,
+#         'yili': yili,
+#         'narh': narh,
+#         }
+#     return avto
+
+# avto1 = avto_info('GM', 'jentra', 'oq', 'avtomat', 2023,)
+# avto2 = avto_info('BMW', 'BMW-7', 'oq', 'avtomat', 2025, 55000)
+
+# avtolar = [avto1, avto2]
+# print('Onlayn bozordagi mavjud avtomobillar')
+# for avto in avtolar:
+#     if avto['narh']:
+#         narh = avto['narh']
+#     else:
+#         narh = "Nomalum"
+#     print(f'{avto['rang']} {avto['model']}.Narhi: {narh}')
+    
+    
+# def oraliq(min, max, qadam = 1):
+#     sonlar = []
+#     while min<max:
+#         sonlar.append(min)
+#         min += qadam
+#     return sonlar
+# print(oraliq(0, 10,2))
+
+def avto_info(kompaniya, model, rang, korobka, yili, narhi = None):
+    avto = {'kompaniya': kompaniya,
+        'model': model,
+        'rang': rang,
+        'korobka': korobka,
+        'yili': yili,
+        'narhi': narhi,
+        }
+    return avto
+
+print('Saytimizdagi avtolar royxatini shakllantiramiz')
+avtolar = []
+while True:
+    print('\nQuyidagi malumotlarni kiriting ', end='')
+    kompaniya=input('ishlab chiqaruvchi ')
+    model=input('Modeli ')
+    rang=input('Rangi ')
+    korobka=input('Karobka ')
+    yili=input('ishlab chiqarilgan yili ')
+    narhi=input('Narhi ')
+    
+    avtolar.append(avto_info(kompaniya, model, rang, korobka, yili, narhi))
+    javob = input("Yana avto qo'shasizmi (yes/no): ")
+    if javob == 'no':
+        break
+    
+print('\n Salonimizdagi avtolar: ')
+for avto in avtolar:
+    if avto['narhi']:
+        narhi=avto['narhi']
+    else:
+        narhi='Nomalum'
+    print(f'{avto['rang'].title()} {avto['model'].title()}, {korobka} karobka. Narhi: {narhi}')
+        
+    
+    
+    
+    
+    
