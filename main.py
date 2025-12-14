@@ -1368,9 +1368,61 @@ import math
 # yosh_hisobla(t_yil=1997, ism='olim')
 # toliq_ism(2000, 'ahmatxonov')  
 
-def yosh_hisobla(t_yil, joriy_yil = 2025):
-    """Foydalanuvchi tugilgan yilidan uning yoshini hisoblaydi"""
-    print(f'Siz {joriy_yil-t_yil} yoshdasiz')
-yosh_hisobla(2000, 2025)
-yosh_hisobla(2000)
-yosh_hisobla(2025,2025)
+# def yosh_hisobla(t_yil, joriy_yil = 2025):
+#     """Foydalanuvchi tugilgan yilidan uning yoshini hisoblaydi"""
+#     print(f'Siz {joriy_yil-t_yil} yoshdasiz')
+# yosh_hisobla(2000, 2025)
+# yosh_hisobla(2000)
+# yosh_hisobla(2025,2025)
+# yosh_hisobla(2025,2025)
+
+# vazifa
+
+# def yosh_ism(ism, yosh):
+#     """Foydalanuvchi ismi va yoshini kiritadigan funksiya"""
+#     print(f'{ism.title()} {2025-yosh}-yilda tugilgan')
+    
+# yosh_ism('ayubxon', 25)
+
+
+# def kvadrat_kub(son):
+#     """Foydalanuvchi kiritgan sonni kvadrati va kubini aniqlovchi funksiya"""
+#     print(f"{son} ning kvadrati {son**2} ga teng \n"
+#           f"{son} ning kubi {son**3} ga teng")
+# kvadrat_kub(5)
+
+
+
+# 
+# def juft_toq(son):
+#     """Foydalanuvchi kiritgan sonni juft yoki toq ekanini aniqlovchi funksiya"""
+#     if son % 2 == 0:
+#         print(f"{son} juft son")
+#     else:
+#         print(f"{son} toq son")
+        
+# juft_toq(12985)
+# 
+
+# def son_ol(son1, son2):
+#     """Foydalanuvchidan ikkita son oladigan va qaysi biri katta yoki kichik ekanini aniqlovchi funksiya"""
+#     if son1 > son2:
+#         print(son1)
+#     if son1 < son2:
+#         print(son2)    
+#     if son1 == son2:
+#         print('sonlar teng')
+
+
+# def son_ol(x, y=2):
+#     print(f'{x} ning {y} darajasi {x**y} ga teng')
+    
+# son_ol(2,5)
+
+
+def bolinish(son):
+    for n in range(2,10):
+        if not son%n:
+            print(f'{son} {n} ga qoldiqsiz bolinadi ')
+
+bolinish(15)
