@@ -1483,40 +1483,86 @@ import math
 #     return sonlar
 # print(oraliq(0, 10,2))
 
-def avto_info(kompaniya, model, rang, korobka, yili, narhi = None):
-    avto = {'kompaniya': kompaniya,
-        'model': model,
-        'rang': rang,
-        'korobka': korobka,
-        'yili': yili,
-        'narhi': narhi,
-        }
-    return avto
+# def avto_info(kompaniya, model, rang, korobka, yili, narhi = None):
+#     avto = {'kompaniya': kompaniya,
+#         'model': model,
+#         'rang': rang,
+#         'korobka': korobka,
+#         'yili': yili,
+#         'narhi': narhi,
+#         }
+#     return avto
 
-print('Saytimizdagi avtolar royxatini shakllantiramiz')
-avtolar = []
-while True:
-    print('\nQuyidagi malumotlarni kiriting ', end='')
-    kompaniya=input('ishlab chiqaruvchi ')
-    model=input('Modeli ')
-    rang=input('Rangi ')
-    korobka=input('Karobka ')
-    yili=input('ishlab chiqarilgan yili ')
-    narhi=input('Narhi ')
+# print('Saytimizdagi avtolar royxatini shakllantiramiz')
+# avtolar = []
+# while True:
+#     print('\nQuyidagi malumotlarni kiriting ', end='')
+#     kompaniya=input('ishlab chiqaruvchi ')
+#     model=input('Modeli ')
+#     rang=input('Rangi ')
+#     korobka=input('Karobka ')
+#     yili=input('ishlab chiqarilgan yili ')
+#     narhi=input('Narhi ')
     
-    avtolar.append(avto_info(kompaniya, model, rang, korobka, yili, narhi))
-    javob = input("Yana avto qo'shasizmi (yes/no): ")
-    if javob == 'no':
-        break
+#     avtolar.append(avto_info(kompaniya, model, rang, korobka, yili, narhi))
+#     javob = input("Yana avto qo'shasizmi (yes/no): ")
+#     if javob == 'no':
+#         break
     
-print('\n Salonimizdagi avtolar: ')
-for avto in avtolar:
-    if avto['narhi']:
-        narhi=avto['narhi']
-    else:
-        narhi='Nomalum'
-    print(f'{avto['rang'].title()} {avto['model'].title()}, {korobka} karobka. Narhi: {narhi}')
+# print('\n Salonimizdagi avtolar: ')
+# for avto in avtolar:
+#     if avto['narhi']:
+#         narhi=avto['narhi']
+#     else:
+#         narhi='Nomalum'
+#     print(f'{avto['rang'].title()} {avto['model'].title()}, {korobka} karobka. Narhi: {narhi}')
         
+    
+# def mijoz_info (ism, familya, t_yil, t_joy, email_add = '', mobil_num = '' ):
+#     mijoz = {'ism': ism,
+#             'familya': familya,
+#             't_yil': t_yil,
+#             'yosh': 2025-t_yil,
+#             't_joy': t_joy,
+#             'email_add': email_add,
+#             'mobil_num': mobil_num,
+#             }
+#     return mijoz
+# print('Foydalanuvchi malumotlarini shakllantiramiz ')
+# mijozlar = []
+# while True:
+#     ism = input('Ism: ')
+#     familya = input('familya: ')
+#     t_yil = int(input('Tugilgan yili: '))
+#     t_joy = input('Tugilgan joyi: ')
+#     email_add = input('Email addresi: ')
+#     mobil_num = input('Mobil raqami: ')
+#     mijozlar.append(mijoz_info(ism, familya, t_yil, t_joy, email_add, mobil_num ))
+#     javob = input("Yana mijoz qo'shasizmi (yes/no)")
+#     if javob == 'no':
+#         break
+# print ('\n Mijozlarimiz ')
+# for mijoz in mijozlar:
+#     print(
+#        f"{mijoz['ism'].title()} {mijoz['familya'].title()},"
+#        f"{mijoz['yosh']} yoshda, telefoni: {mijoz['mobil_num']}"
+#        )    
+    
+
+# def sonlar(a,b,c):
+#     print(max(a, b, c))
+    
+# sonlar(5,666,187)
+    
+def fibonachchi(n):
+    sonlar = []
+    for x in range(n):
+        if x == 0 or x == 1:
+            sonlar.append(1)
+        else:
+            sonlar.append(sonlar[x-1] + sonlar[x-2])
+    return sonlar
+print(fibonachchi(5))
     
     
     
