@@ -1554,17 +1554,27 @@ import math
     
 # sonlar(5,666,187)
     
-def fibonachchi(n):
-    sonlar = []
-    for x in range(n):
-        if x == 0 or x == 1:
-            sonlar.append(1)
-        else:
-            sonlar.append(sonlar[x-1] + sonlar[x-2])
-    return sonlar
-print(fibonachchi(5))
+# def fibonachchi(n):
+#     sonlar = []
+#     for x in range(n):
+#         if x == 0 or x == 1:
+#             sonlar.append(1)
+#         else:
+#             sonlar.append(sonlar[x-1] + sonlar[x-2])
+#     return sonlar
+# print(fibonachchi(5))
     
     
-    
+def bahola(ismlar):
+    baholar = {}
+    while ismlar:
+        ism = ismlar.pop()
+        baho = input(f'Talaba {ism.title()} ning bahosi ')
+        baholar[ism]=int(baho)
+    return baholar
+talabalar = ['ali', 'vali', 'hasan', 'husan']
+baholar = bahola(talabalar[:])
+print(baholar)
+print(talabalar)
     
     
