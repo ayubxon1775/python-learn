@@ -1610,20 +1610,33 @@ import math
 # print(summa(5,5))
 
 
-def avto_info(kompaniya, model, **malumotlar):
-    malumotlar['kompaniya']=kompaniya
-    malumotlar['model']=model
+# def avto_info(kompaniya, model, **malumotlar):
+#     malumotlar['kompaniya']=kompaniya
+#     malumotlar['model']=model
+#     return malumotlar
+
+# avto1 = avto_info('GM', 'malibu', rang='qora', yil=2018)
+# avto2 = avto_info('Kia', 'K5', rang = 'qizil', narh= 35000, yil=2020)
+
+# print(avto2)
+
+# def summa(*sonlar):
+#     kopaytma = 1
+#     for son in sonlar:
+#         kopaytma *= son
+#     return kopaytma
+
+# print(summa(1,2,3))
+
+def talaba_malumot(ism, familyasi, **malumotlar):
+    malumotlar['ism']=ism
+    malumotlar['familyasi']=familyasi
     return malumotlar
 
-avto1 = avto_info('GM', 'malibu', rang='qora', yil=2018)
-avto2 = avto_info('Kia', 'K5', rang = 'qizil', narh= 35000, yil=2020)
+talaba1 = talaba_malumot('Ayubxon', 'Axmatxonov', t_yil=2000, t_manzil = "Namangan")
+talaba2 = talaba_malumot('abdurahmon', 'Ismanjanov', t_yil=2000, t_manzil = "Namangan")
 
-print(avto2)
-
-
-
-
-
+print(talaba1)
 
 
 
