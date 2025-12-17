@@ -1590,15 +1590,40 @@ import math
 # print(ismlar)
 # print(yangi_ismlar)
 
-talabalar = ['ali', 'vali', 'hasan', 'husan']
+# talabalar = ['ali', 'vali', 'hasan', 'husan']
 
-def bahola(ismlar):
-    baholar = {}
-    for ism in ismlar:
-        baho = input(f'Talaba {ism.title()}ning bahosi ')
-        baholar[ism] = baho
-    return baholar
+# def bahola(ismlar):
+#     baholar = {}
+#     for ism in ismlar:
+#         baho = input(f'Talaba {ism.title()}ning bahosi ')
+#         baholar[ism] = baho
+#     return baholar
     
-baholar = bahola(talabalar)
-print(talabalar)
-print(baholar)
+# baholar = bahola(talabalar)
+# print(talabalar)
+# print(baholar)
+
+
+
+# def summa(x,y,*sonlar):
+#     return x+y+sum(sonlar)
+# print(summa(5,5))
+
+
+def avto_info(kompaniya, model, **malumotlar):
+    malumotlar['kompaniya']=kompaniya
+    malumotlar['model']=model
+    return malumotlar
+
+avto1 = avto_info('GM', 'malibu', rang='qora', yil=2018)
+avto2 = avto_info('Kia', 'K5', rang = 'qizil', narh= 35000, yil=2020)
+
+print(avto2)
+
+
+
+
+
+
+
+
