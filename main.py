@@ -8,7 +8,7 @@ Created on Sat Nov 22 11:14:53 2025
 # sana 23.11.2025
 
 # print arifmetik amallar
-import math
+# import math
 
 #print ('"Nexia", "Tiko", "Damas" ko\'rganlar havas qilar')
 
@@ -1628,15 +1628,53 @@ import math
 
 # print(summa(1,2,3))
 
-def talaba_malumot(ism, familyasi, **malumotlar):
-    malumotlar['ism']=ism
-    malumotlar['familyasi']=familyasi
-    return malumotlar
+# def talaba_malumot(ism, familyasi, **malumotlar):
+#     malumotlar['ism']=ism
+#     malumotlar['familyasi']=familyasi
+#     return malumotlar
 
-talaba1 = talaba_malumot('Ayubxon', 'Axmatxonov', t_yil=2000, t_manzil = "Namangan")
-talaba2 = talaba_malumot('abdurahmon', 'Ismanjanov', t_yil=2000, t_manzil = "Namangan")
+# talaba1 = talaba_malumot('Ayubxon', 'Axmatxonov', t_yil=2000, t_manzil = "Namangan")
+# talaba2 = talaba_malumot('abdurahmon', 'Ismanjanov', t_yil=2000, t_manzil = "Namangan")
 
-print(talaba1)
+# print(talaba1)
+
+# import avto_info_mod as aim
+
+# avto1 = aim.avto_info('GM')
+
+# from avto_info_mod import avto_info as ainfo, info_print as iprint
+
+# from avto_info_mod import *
+
+import math
+import random as r
+
+# x = 400
+# print(math.sqrt(x))
+# print(math.pow(6, 2))
+# print(math.pi)
+# print(math.log2(8))
+
+# son = r.randint(0, 10)
+# print(son)
+
+# ismlar = ['olim', 'anvar', 'hasan', 'husan']
+
+# ism = r.choice(ismlar)
+# print(ism)
+# print(r.choice(ism))
+
+# x = list(range(0,51,5))
+# print(x)
+# print(r.choice(x))
+
+
+x = list(range(11))
+print(x)
+r.shuffle(x)
+print(x)
+
+
 
 
 
