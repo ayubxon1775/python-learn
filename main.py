@@ -1646,8 +1646,8 @@ Created on Sat Nov 22 11:14:53 2025
 
 # from avto_info_mod import *
 
-import math
-import random as r
+# import math
+# import random as r
 
 # x = 400
 # print(math.sqrt(x))
@@ -1669,10 +1669,80 @@ import random as r
 # print(r.choice(x))
 
 
-x = list(range(11))
-print(x)
-r.shuffle(x)
-print(x)
+# x = list(range(11))
+# print(x)
+# r.shuffle(x)
+# print(x)  
+
+# lambda
+
+# uzunlik = lambda pi, r: 2*pi*r
+# print(uzunlik(math.pi, 10))
+
+# kvadrat = lambda x, y: x**y
+# print(kvadrat(3,2))
+
+# def daraja(n):
+#     return lambda x: x**n
+
+
+# kvadrat = daraja(2)
+# kub = daraja(3)
+
+
+from math import sqrt
+
+# sonlar = list(range(10))
+
+# ildizlar = list(map(sqrt, sonlar))
+
+# print(ildizlar)
+
+# def daraja2(x):
+#     """Berilgan sonning kvadratini qaytaruvchi funksiya"""
+#     return x*x
+# print(list(map(daraja2, sonlar)))
+    
+# kvadratlar = list(map(lambda x: x*x, sonlar))
+# print(kvadratlar)
+
+# a = [2,3,5]
+# b = [5,6,7]
+# a_plus_b = list(map(lambda x, y: x+y,a,b))
+ 
+# print(a_plus_b)
+
+
+import random as r
+
+
+# sonlar = r.sample(range(100),10)
+# print(sonlar)
+# def juftmi(x):
+#     return x%2==0
+
+
+# juft_sonlar = list(filter(lambda x: x%2==0,sonlar))
+
+# print(juft_sonlar)
+
+mevalar = ['olma', 'anor', 'anjir', 'shaftoli', 'orik', 'tarvuz', 'qovun', 'banan']
+# harf = 'a'
+# mevalar_b = list(filter(lambda meva: meva.startswith(harf), mevalar))
+# print(mevalar_b)
+
+mevalar2 = list(filter(lambda meva:len(meva) <= 5, mevalar))
+# print(mevalar2)
+
+mevalar3 = list(filter(lambda meva: (meva.startswith('a') and meva.endswith('r')), mevalar))
+print(mevalar3)
+
+
+
+
+
+
+
 
 
 
