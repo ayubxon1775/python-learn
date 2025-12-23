@@ -1726,22 +1726,31 @@ import random as r
 
 # print(juft_sonlar)
 
-mevalar = ['olma', 'anor', 'anjir', 'shaftoli', 'orik', 'tarvuz', 'qovun', 'banan']
+# mevalar = ['olma', 'anor', 'anjir', 'shaftoli', 'orik', 'tarvuz', 'qovun', 'banan']
 # harf = 'a'
 # mevalar_b = list(filter(lambda meva: meva.startswith(harf), mevalar))
 # print(mevalar_b)
 
-mevalar2 = list(filter(lambda meva:len(meva) <= 5, mevalar))
+# mevalar2 = list(filter(lambda meva:len(meva) <= 5, mevalar))
 # print(mevalar2)
 
-mevalar3 = list(filter(lambda meva: (meva.startswith('a') and meva.endswith('r')), mevalar))
-print(mevalar3)
+# mevalar3 = list(filter(lambda meva: (meva.startswith('a') and meva.endswith('r')), mevalar))
+# print(mevalar3)
 
+# //////////////
+#           OOP
 
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        
+    def greet(self):
+        print(f'Hello, my name is {self.name} and I am {self.age} years old.')
 
+person1 = Person('ayubxon', 25)
 
-
-
+person1.name
 
 
 
