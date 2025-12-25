@@ -1740,20 +1740,49 @@ import random as r
 # //////////////
 #           OOP
 
-class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
         
-    def greet(self):
-        print(f'Hello, my name is {self.name} and I am {self.age} years old.')
+#     def greet(self):
+#         print(f'Hello, my name is {self.name} and I am {self.age} years old.')
 
-person1 = Person('ayubxon', 25)
+# person1 = Person('ayubxon', 25)
 
-person1.name
-
-
+# person1.name
 
 
+# print("Smart Kalkulyator")
 
+# son1 = int(input('1-sonni kiriting '))
+# son2 = int(input('2-sonni kiriting '))
+# amal = input('+,-,*,/ shulardan birini tanlang ')
+
+
+# if amal == '+':
+#     natija = son1 + son2
+#     print(f'Natija: {natija}')
+# elif amal == '-':
+#     natija = son1 - son2    
+#     print(f'Natija: {natija}')
+# elif amal == '*':
+#     natija = son1 * son2
+#     print(f'Natija: {natija}')
+# elif amal == "**":
+#     natija = son1 ** son2
+#     print(f'Natija: {natija}')
+# elif amal == '/':
+#     if son2 == 0:
+#         print('hato sonni 0 ga bolib bolmaydi')
+#     else:
+#         natija = son1 / son2
+#         print(f'Natija: {natija}')
+
+# else:
+#     print("Kechirasiz bunday amalni tanimayman")
+# print("Dastur tugadi")
+
+for n in range(1,10):
+    print(n**3)
 
