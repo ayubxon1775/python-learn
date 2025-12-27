@@ -1690,7 +1690,7 @@ Created on Sat Nov 22 11:14:53 2025
 # kub = daraja(3)
 
 
-from math import sqrt
+# from math import sqrt
 
 # sonlar = list(range(10))
 
@@ -1713,7 +1713,7 @@ from math import sqrt
 # print(a_plus_b)
 
 
-import random as r
+# import random as r
 
 
 # sonlar = r.sample(range(100),10)
@@ -1783,6 +1783,46 @@ import random as r
 #     print("Kechirasiz bunday amalni tanimayman")
 # print("Dastur tugadi")
 
-for n in range(1,10):
-    print(n**3)
+# for n in range(1,10):
+#     print(n**3)
+
+# x=10
+# print(type(x))
+# matn = 'salom'
+# print(type(matn))
+# print(matn.upper())
+# print(x.upper())
+
+class Talaba:
+    def __init__(self, ism, familiya, tyil):
+        self.ism = ism
+        self.familiya = familiya
+        self.t_yil = tyil
+        
+    def get_name(self):
+        return self.ism
+    
+    def get_age(self,yil):
+        return yil - self.t_yil
+    
+    def get_lastname(self):
+        return self.familiya
+    
+    def tanishtir(self):
+        return f'ismim {self.ism} {self.familiya}, tugilgan yilim {self.t_yil}'
+        
+talaba1 = Talaba("Olim", 'Olimov', 2000)
+talaba2 = Talaba("Hasan", 'Husanov', 2005)
+talaba3 = Talaba("Akrom", 'Alimov', 2002)
+
+
+
+
+
+
+
+
+
+
+
 
